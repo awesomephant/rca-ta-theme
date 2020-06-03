@@ -1,0 +1,6 @@
+vendor
+composer.lock
+node_modules/
+documentation/
+style.css
+yarn.lock

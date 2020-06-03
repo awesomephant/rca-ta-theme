@@ -1,0 +1,16 @@
+{
+    "name": "strike-radio-theme",
+    "description": "Wordpress theme for Strike Radio",
+    "authors": "Max Kohler",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "scripts": {
+        "start": "gulp"
+    },
+    "dependencies": {
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-sass": "^4.0.2"
+    }
+}

@@ -1,0 +1,34 @@
+@mixin bp($point) {
+    @if $point==l {
+        @media (min-width: 70rem) {
+            @content;
+        }
+    }
+    @else if $point==m {
+        @media (min-width: 45rem) {
+            @content;
+        }
+    }
+
+    @else if $point==s {
+        @media (min-width: 35rem) {
+            @content;
+        }
+    }
+}
+
+
+:root {
+    --sans: "AG", "Helvetica";
+    --black: rgb(0, 2, 6);
+    --ratio: 1.25;
+    --ms-0: clamp(1.1rem, 5vw, 1.3rem);
+    --ms--1: calc(var(--ms-0) / var(--ratio));
+    --ms-1: calc(var(--ms-0) * var(--ratio));
+    --ms-2: calc(var(--ms-1) * var(--ratio));
+    --ms-3: calc(var(--ms-2) * var(--ratio));
+    --ms-4: calc(var(--ms-3) * var(--ratio));
+    --ms-5: calc(var(--ms-4) * var(--ratio));
+    --ms-6: calc(var(--ms-5) * var(--ratio));
+    --ms-7: calc(var(--ms-6) * var(--ratio));
+}

@@ -1,0 +1,12 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<article class="single-item" id="post-{{ post.ID }}">
+	<header class="si-header">
+		<h1 class="si-title">{{ post.title }}</h1>
+	</header>
+	<main class="si-content">
+		{{post.content}}
+	</main>
+</article>
+{% endblock %}
